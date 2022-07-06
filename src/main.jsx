@@ -6,6 +6,7 @@ import "./index.css";
 import Layout from "./components/Layout.jsx";
 import FooterPage from "./components/FooterPage.jsx";
 import Home from "./components/Home";
+import ReactPage from "./components/ReactPage";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -15,6 +16,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="ReactPage" element={<ReactPage />} />
           {/* <Route path="/about" element={<About />} /> */}
         </Routes>
       </Layout>
