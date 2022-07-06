@@ -24,3 +24,29 @@
 .layout__body {
   padding-top: 5%;
 }
+
+@media screen and (max-width: 1200px) {
+  .layout__background {
+    height: 400px;
+    width: 800px;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .layout__background {
+    width: 600px;
+    height: 300px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .layout__background {
+    width: 440px;
+    height: 230px;
+  }
+}
+@media screen and (max-width: 455px) {
+  .layout__background {
+    width: 300px;
+    height: 230px;
+  }
+}
