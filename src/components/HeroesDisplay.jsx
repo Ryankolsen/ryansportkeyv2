@@ -96,7 +96,7 @@ export default function Heroes() {
             </div>
             <div className="heroes-display__hero-column-code">
               <h3 className="heroesImageTitle">
-                <a href="https://github.com/Ryankolsen/ryansportkey">
+                <a href="https://github.com/Ryankolsen/ryansportkeyv2">
                   See the code
                 </a>
               </h3>
