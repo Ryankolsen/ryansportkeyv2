@@ -29,7 +29,7 @@ export const projectCarouselObjects = [
       "The hero list below is stored on MongoDB using Netlify serverless functions to connect direct to the MongoDP API",
 
     links: {
-      firstLink: "https://github.com/Ryankolsen/ryansportkey",
+      firstLink: "https://github.com/Ryankolsen/ryansportkeyv2",
       firstLinkButtonText: "Code on GitHub",
       secondLink: "",
       secondLinkButtonText: "",
