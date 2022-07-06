@@ -1,0 +1,56 @@
+/* *************** React Page ********************** */
+.react_page__header-overline {
+  margin-top: 35px;
+  border-top: 6px black solid;
+  width: 100%;
+}
+
+.react_page__header-container {
+  background-color: rgb(181, 220, 255);
+  width: 25%;
+  min-width: 250px;
+  border-radius: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  opacity: 0.9;
+  margin-top: 25px;
+}
+
+.react_page__reactBanner {
+  font-family: "Marvel", sans-serif;
+  font-size: 55px;
+  color: rgb(0, 0, 66);
+  opacity: 1;
+  /* text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white; */
+}
+
+.react_page__container {
+  width: 100%;
+}
+
+.reactRow {
+  display: flex;
+}
+
+.textHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Irish Grover", cursive;
+  font-family: "Marvel", sans-serif;
+  font-family: "Permanent Marker", cursive;
+  margin-top: 5%;
+}
+
+.textBox {
+  justify-content: center;
+  margin: 10px;
+  margin-top: 5%;
+}
+
+.centeredButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

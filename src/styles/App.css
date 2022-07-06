@@ -1,0 +1,36 @@
+@import "header.css";
+@import "new-home.css";
+@import "react-page.css";
+@import "about.css";
+@import "layout.css";
+@import "carousel.css";
+@import "fonts.css";
+@import "button-counter.css";
+@import "heroes-display.css";
+@import "heroes.css";
+@import "heroes-form.css";
+
+/* General */
+
+:root {
+  --blue-bg-color: rgb(43, 106, 199);
+  --light-blue-bg-color: rgb(219, 241, 253);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.alignLeft {
+  text-align: left;
+}
+
+.footer {
+  width: 100%;
+  min-height: 10vh;
+  background-color: rgb(171, 188, 226);
+  white-space: nowrap;
+  font-family: "Nunito", sans-serif;
+}
