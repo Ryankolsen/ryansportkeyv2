@@ -14,6 +14,7 @@
   font-family: "Rye", cursive;
   color: rgb(242, 251, 255);
   font-size: 45px;
+  margin-bottom: 50px;
 }
 .about__accordion-container {
   display: flex;
@@ -136,14 +137,16 @@
 .about__certCard {
   margin: 2%;
   background-color: rgb(195, 231, 250);
+  margin: 25px 0 25px 0;
 }
 
-.MyFrame {
+/* .MyFrame {
   max-width: 600;
   max-height: 500;
-}
+} */
 
-.__about-cert-body {
+.about__cert-body {
   background-color: var(--light-blue-bg-color);
-  margin: auto;
+  margin: 25px auto 25px auto;
+  padding: 25px 0 25px 0;
 }

@@ -96,7 +96,7 @@ function About() {
           </Card>
         </div>
 
-        <div className="about__eduCard mt-3 ">
+        <div className="about__eduCard mt-3">
           <Card style={{ height: "355px" }}>
             <Card.Header className="about__fauCard">
               Florida Atlantic University
@@ -129,7 +129,7 @@ function About() {
         <Card.Header className="__about-cert-card">
           <h2>Certificates</h2>
         </Card.Header>
-        <Card.Body className="__about-cert-body">
+        <Card.Body className="about__cert-body">
           <DisplayList key={"certList"} as="" items={certificates} />
           <div className="centeredButton">
             <Button variant="primary" className="" href={scCodesMain}>
