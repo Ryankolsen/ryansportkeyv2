@@ -1,15 +1,18 @@
-.layout__blm-container {
-  /* height: 500px; */
+.layout__main-container {
+  min-width: 500px;
 }
-
+.layout__blm-container {
+  padding-left: 20px;
+}
 .layout__header {
   background-color: rgb(12, 12, 12);
   width: 100%;
-  height: 100px;
+  height: 125px;
   text-align: center;
 }
 .layout__header__container {
   display: flex;
+  min-width: 476px;
 }
 
 .layout__title {
@@ -17,8 +20,9 @@
   font-family: "Press Start 2P", cursive;
   size: 16;
   color: #c0d8f0;
-  padding-top: 13px;
+  padding-top: 25px;
   align-items: center;
+  opacity: 0;
 }
 
 .layout__nav-bar {
@@ -52,10 +56,12 @@
 }
 .layout__background-solid {
   background-color: #344389;
+  min-width: 500px;
 }
 
 .layout__body {
   padding-top: 5%;
+  min-width: 450px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -76,11 +82,13 @@
     width: 440px;
     height: 230px;
   }
+  .layout__title {
+    margin-left: 50px;
+  }
 }
-@media screen and (max-width: 455px) {
+@media screen and (max-width: 475px) {
   .layout__background {
-    width: 100%;
-    height: 300px;
+    height: 250px;
   }
   .layout__background-sides {
     background-color: #0e1848;

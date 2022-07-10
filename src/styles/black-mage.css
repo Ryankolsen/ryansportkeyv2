@@ -1,5 +1,5 @@
 .layout__header__container {
-  padding: 5px 0 0 40px;
+  padding: 5px 0 0 0px;
   position: float;
 }
 
@@ -45,19 +45,45 @@
   position: relative;
   top: -28px;
   left: -65px;
-  /* opacity: 0; */
+  opacity: 0;
 }
 .magic-ball {
   position: relative;
+  margin-bottom: -20px;
   top: -0px;
-  left: -15px;
-  /* opacity: 0; */
+  left: -58px;
+  height: 25px;
+  opacity: 0;
 }
 
-@media screen and (max-width: 1135px) {
+/* @media screen and (max-width: 1099px) {
+  .top-hat {
+    position: relative;
+    top: 0px;
+    left: -80px;
+  }
+} */
+
+@media screen and (max-width: 1200px) {
   .top-hat {
     position: relative;
     top: -44px;
     left: -12px;
   }
 }
+
+@media screen and (max-width: 1276px) {
+  .top-hat {
+    position: relative;
+    top: -43px;
+    left: -12px;
+  }
+}
+
+/* @media screen and (max-width: 1135px) {
+  .top-hat {
+    position: relative;
+    top: -44px;
+    left: -12px;
+  }
+} */
