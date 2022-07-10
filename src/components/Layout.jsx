@@ -1,18 +1,26 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { NavDropdown, Navbar, Nav } from "react-bootstrap";
 import BlackMage from "./BlackMage";
+import { gsap } from "gsap";
 
 import "../styles/App.css";
 
 export default function Layout(props) {
+  const title = useRef();
+  const titleBackground = useRef();
   return (
-    <div>
+    <div className="layout__main-container">
       <header className="layout__header">
-        <div className="layout__header__container">
-          <BlackMage />
-          <h2 className="layout__title"> Ryan's Portfolio</h2>
+        <div ref={titleBackground} className="layout__header__container">
+          <div className="layout__blm-container">
+            <BlackMage title={title} titleBackground={titleBackground} />
+          </div>
+          <h2 ref={title} className="layout__title">
+            {" "}
+            Ryan's Portfolio
+          </h2>
         </div>
         <Navbar
           className="layout__nav-bar"
