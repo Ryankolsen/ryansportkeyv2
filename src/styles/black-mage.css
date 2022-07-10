@@ -1,0 +1,63 @@
+.layout__header__container {
+  padding: 5px 0 0 40px;
+  position: float;
+}
+
+.body {
+  position: relative;
+  top: 35px;
+}
+
+.top-hat {
+  position: relative;
+  left: -79px;
+}
+
+.hand-right {
+  position: relative;
+  top: 30px;
+  left: -78px;
+}
+
+.arm-right {
+  position: relative;
+  top: 45px;
+  left: -61px;
+}
+.eyes {
+  position: relative;
+  top: -29px;
+  left: -39px;
+}
+.hand-left {
+  position: relative;
+  top: 36px;
+  left: -33px;
+}
+
+.foot {
+  position: relative;
+  top: 54px;
+  left: -18px;
+}
+
+.wand {
+  position: relative;
+  top: -28px;
+  left: -65px;
+  /* opacity: 0; */
+}
+.magic-ball {
+  position: relative;
+  top: -0px;
+  left: -15px;
+  /* opacity: 0; */
+}
+
+@media screen and (max-width: 1135px) {
+  .top-hat {
+    position: relative;
+    top: -44px;
+    left: -12px;
+  }
+}

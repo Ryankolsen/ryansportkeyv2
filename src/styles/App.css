@@ -1,4 +1,3 @@
-@import "header.css";
 @import "new-home.css";
 @import "react-page.css";
 @import "about.css";
@@ -9,6 +8,7 @@
 @import "heroes-display.css";
 @import "heroes.css";
 @import "heroes-form.css";
+@import "black-mage.css";
 
 /* General */
 
