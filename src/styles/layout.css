@@ -67,14 +67,14 @@
 @media screen and (max-width: 1200px) {
   .layout__background {
     height: 400px;
-    width: 800px;
+    width: 760px;
     margin: auto;
   }
 }
 @media screen and (max-width: 1000px) {
   .layout__background {
-    width: 600px;
     height: 300px;
+    width: 565px;
   }
 }
 @media screen and (max-width: 800px) {
@@ -89,6 +89,7 @@
 @media screen and (max-width: 475px) {
   .layout__background {
     height: 220px;
+    width: 415px;
   }
   .layout__background-sides {
     background-color: #0e1848;
@@ -98,6 +99,7 @@
 @media screen and (max-width: 425px) {
   .layout__background {
     height: 175px;
-    margin-left: 20px;
+    width: 330px;
+    margin: auto;
   }
 }
