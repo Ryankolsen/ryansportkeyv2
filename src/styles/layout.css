@@ -1,5 +1,5 @@
 .layout__main-container {
-  min-width: 500px;
+  min-width: 380px;
 }
 .layout__blm-container {
   padding-left: 20px;
@@ -12,7 +12,7 @@
 }
 .layout__header__container {
   display: flex;
-  min-width: 476px;
+  min-width: 350x;
 }
 
 .layout__title {
@@ -56,12 +56,12 @@
 }
 .layout__background-solid {
   background-color: #344389;
-  min-width: 500px;
+  min-width: 350px;
 }
 
 .layout__body {
   padding-top: 5%;
-  min-width: 450px;
+  min-width: 390px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -88,10 +88,16 @@
 }
 @media screen and (max-width: 475px) {
   .layout__background {
-    height: 250px;
+    height: 220px;
   }
   .layout__background-sides {
     background-color: #0e1848;
     padding: 60px 0 0px 0;
+  }
+}
+@media screen and (max-width: 425px) {
+  .layout__background {
+    height: 175px;
+    margin-left: 20px;
   }
 }

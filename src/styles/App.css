@@ -29,6 +29,7 @@
 
 .footer {
   width: 100%;
+  min-width: 100px;
   min-height: 10vh;
   background-color: rgb(171, 188, 226);
   white-space: nowrap;
