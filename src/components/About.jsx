@@ -57,7 +57,7 @@ function About() {
                   HTML/CSS, SQL, C#, ASP.Net and I kept going from there.
                 </Card.Text>
                 <Card.Text>
-                  Lately I have really enjoyed building apps with React I.
+                  Lately I have really enjoyed building apps with React I
                   genuinely love breaking larger applications down into small,
                   manageable components and working to find the most efficient
                   and effective solution.
