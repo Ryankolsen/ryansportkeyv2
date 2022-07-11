@@ -14,12 +14,26 @@ function BlackMage({ title, titleBackground }) {
       .to(q(".hand-right"), { delay: 1, y: -7, x: -3 })
       .to(q(".wand"), { delay: 0, opacity: 1 })
       .to(q(".magic-ball"), { delay: 2, opacity: 1 })
-      .to(q(".magic-ball"), { delay: 1, x: 350 })
-      .to(q(".magic-ball"), { delay: 0, opacity: 0 })
-      .to(titleBackground.current, { backgroundColor: "white" })
-      .to(titleBackground.current, { backgroundColor: "rgb(12, 12, 12)" })
+      .to(q(".wand"), { delay: 0, rotate: 15, opacity: 1 })
+      .to(q(".magic-ball"), { delay: 0, x: 350 })
+      .to(q(".top-hat"), { y: 2 })
 
-      .to(title.current, { opacity: 1, x: -100 });
+      .to(q(".magic-ball"), { delay: 0, scale: 4, opacity: 0 })
+
+      .to(titleBackground.current, {
+        backgroundColor: "#ACC2FC",
+      })
+
+      .to(titleBackground.current, { backgroundColor: "rgb(12, 12, 12)" })
+      .to(q(".top-hat"), { y: 0 })
+      .to(title.current, { opacity: 1, x: -100 })
+      .to(q(".wand"), { delay: 0, rotate: 0 })
+      .to(q(".wand"), { delay: 1, opacity: 0 })
+      .to(q(".hand-right"), { delay: 0, x: -2 })
+      .to(q(".hand-right"), { delay: 0, x: -6 })
+      .to(q(".hand-right"), { delay: 0, x: -2 })
+      .to(q(".hand-right"), { delay: 0, x: -6 })
+      .to(q(".hand-right"), { delay: 0, x: 0 });
   }, []);
   return (
     <div ref={el}>
