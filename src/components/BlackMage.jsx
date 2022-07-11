@@ -6417,7 +6417,7 @@ function BlackMage({ title, titleBackground }) {
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <rect width="4" height="25" fill="#2C3B8C" />
+          <rect width="4" height="25" fill="#8C6415" />
         </svg>
       </div>
     </div>
