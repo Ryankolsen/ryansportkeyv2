@@ -26,7 +26,7 @@ function BlackMage({ title, titleBackground }) {
 
       .to(titleBackground.current, { backgroundColor: "rgb(12, 12, 12)" })
       .to(q(".top-hat"), { y: 0 })
-      .to(title.current, { opacity: 1, x: -100 })
+      .to(title.current, { opacity: 1, x: -80 })
       .to(q(".wand"), { delay: 0, rotate: 0 })
       .to(q(".wand"), { delay: 1, opacity: 0 })
       .to(q(".hand-right"), { delay: 0, x: -2 })
@@ -36,7 +36,7 @@ function BlackMage({ title, titleBackground }) {
       .to(q(".hand-right"), { delay: 0, x: 0 });
   }, []);
   return (
-    <div ref={el}>
+    <div ref={el} className="black-mage__container">
       <img className="magic-ball" src={MagicBall} />
       <div>
         <svg
