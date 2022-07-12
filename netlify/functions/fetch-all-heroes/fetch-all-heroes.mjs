@@ -2,6 +2,7 @@
 import fetch from "node-fetch";
 
 const API_KEY = process.env.REACT_APP_MONGODB_API_KEY;
+console.log(API_KEY);
 
 export const handler = async function (event, context) {
   if (!context.clientContext && !context.clientContext.identity) {
@@ -32,6 +33,7 @@ export const handler = async function (event, context) {
         }),
       }
     );
+
     if (!response.ok) {
       // NOT res.status >= 200 && res.status < 300
       return { statusCode: response.status, body: response.statusText };

@@ -14,19 +14,23 @@ export default function Home() {
       />
       <div className="new-home__links">
         <div className="new-home__button">
-          <Button href="https://main--astonishing-rolypoly-ad8c2b.netlify.app/">
-            React API
-          </Button>
+          <a href="https://main--astonishing-rolypoly-ad8c2b.netlify.app/">
+            <button className="button">React API</button>
+          </a>
         </div>
         <div className="new-home__button">
-          <Button as={Link} to="/ReactPage">
-            React Code/Apps
-          </Button>
+          <Link to="/ReactPage">
+            <button className="button" as={Link} to="/About">
+              React Code/Apps
+            </button>
+          </Link>
         </div>
         <div className="new-home__button">
-          <Button as={Link} to="/About">
-            About
-          </Button>
+          <Link to="/About">
+            <button className="button" as={Link} to="/About">
+              About
+            </button>
+          </Link>
         </div>
       </div>
     </div>

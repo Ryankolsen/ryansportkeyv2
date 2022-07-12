@@ -22,15 +22,16 @@ const ButtonCounter = () => {
             }`}
           </p>
           <div className="text-center">
-            <Button
-              variant="danger"
-              className="button-counter__button button-counter__counter-button"
+            <button
+              className="button alert button-counter__button button-counter__counter-button"
               onClick={() => setCount(count + 1)}
             >
               Don't Click Me!
-            </Button>
-            <div>
-              <Button onClick={() => setCount(0)}> Reset</Button>
+            </button>
+            <div className="button-counter__reset-container">
+              <button className="button" onClick={() => setCount(0)}>
+                Reset
+              </button>
             </div>
           </div>
         </div>
