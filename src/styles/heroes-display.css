@@ -55,11 +55,15 @@
 
 .heroes-display__remove-button {
   margin: auto;
-  display: grid;
-  width: 75%;
+  width: 100%;
   border-radius: 15px;
+  align-items: center;
 }
 
+.heroes-display__remove-button-btn {
+  width: 250px;
+  margin: auto;
+}
 @media screen and (max-width: 800px) {
   .heroes-display__container {
     display: block;

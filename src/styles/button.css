@@ -1,0 +1,26 @@
+.button {
+  font-family: "Roboto Slab", serif;
+  background: #d7e1ef;
+
+  border-radius: 6px;
+  color: #090516;
+  font-size: 19px;
+  text-align: center;
+  min-height: 40px;
+  margin: 10px 25px 10px 25px;
+  border-radius: 6px;
+  padding: 0 10px 0 10px;
+  /* box-shadow: 2px 2px #bbbbc9; */
+  transition: all 0.5s ease;
+}
+.alert {
+  background-color: #dc3545;
+  color: #ffffff;
+}
+
+.button:hover {
+  background-color: #a9bdda;
+}
+.alert:hover {
+  background-color: #5e0300;
+}

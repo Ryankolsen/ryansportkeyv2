@@ -78,15 +78,15 @@ export default function HeroesForm({ heroes, setHeroes }) {
             {mutation.isSuccess ? <div>Woot! Hero Added!</div> : null}
           </div>
           <div className="centeredButton">
-            <Button
+            <button
               type="submit"
-              className="mb-3"
+              className="button"
               onClick={() => {
                 mutation.mutate();
               }}
             >
               Add Hero
-            </Button>
+            </button>
           </div>
         </Col>
       </Row>

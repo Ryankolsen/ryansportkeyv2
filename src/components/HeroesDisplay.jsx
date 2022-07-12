@@ -73,15 +73,15 @@ export default function Heroes() {
             {mutation.isSuccess ? <div>Successfully Deleted!</div> : null}
           </div>
           <div className="heroes-display__remove-button">
-            <Button
-              className="centeredButton mb-3"
+            <button
+              className="button alert heroes-display__remove-button-btn "
               variant="danger"
               onClick={() => {
                 mutation.mutate();
               }}
             >
               Remove Selected Heroes
-            </Button>
+            </button>
           </div>
         </div>
         <div className="heroes-display__hero-column counterColumn  ">
