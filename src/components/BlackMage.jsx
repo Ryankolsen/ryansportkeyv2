@@ -10,15 +10,21 @@ function BlackMage({ title, titleBackground }) {
   useEffect(() => {
     tl.current = gsap
       .timeline()
-      .to(q(".hand-right"), { delay: 2, y: 8, x: 4 })
-      .to(q(".hand-right"), { delay: 1, y: -7, x: -3 })
-      .to(q(".wand"), { delay: 0, opacity: 1 })
-      .to(q(".magic-ball"), { delay: 2, opacity: 1 })
-      .to(q(".wand"), { delay: 0, rotate: 15, opacity: 1 })
-      .to(q(".magic-ball"), { delay: 0, x: 350 })
-      .to(q(".top-hat"), { y: 2 })
 
-      .to(q(".magic-ball"), { delay: 0, scale: 4, opacity: 0 })
+      .to(q(".hand-right"), { delay: 2, y: 8, x: 4 })
+      .to(q(".hand-right"), { delay: 1, y: -4, x: -2 })
+      .to(q(".wand"), { delay: 0, opacity: 1 })
+
+      .to(q(".wand"), { delay: 1, rotate: -10 })
+      .to(q(".magic-ball"), { delay: 0, opacity: 1 })
+
+      .to(q(".wand"), { x: -2 })
+
+      .add("use-wand")
+      .to(q(".magic-ball"), { delay: 0, x: 350 }, "use-wand")
+      .to(q(".wand"), { delay: 0, rotate: 10, opacity: 1 }, "use-wand")
+      .to(q(".top-hat"), { y: 2 })
+      .to(q(".magic-ball"), { delay: 0, duration: 1.5, scale: 10, opacity: 0 })
 
       .to(titleBackground.current, {
         backgroundColor: "#ACC2FC",
