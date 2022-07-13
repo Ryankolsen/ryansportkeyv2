@@ -50,6 +50,7 @@
   color: rgb(242, 251, 255);
   justify-content: center;
   text-align: center;
+  font-family: "PT Sans", sans-serif;
 }
 .about__accordion-header {
   max-width: 750px;
@@ -80,6 +81,7 @@
 .about__edu-card-body {
   background-color: var(--light-blue-bg-color);
   margin-top: 15px;
+  font-family: "PT Sans", sans-serif;
 }
 
 .about__fauCard {
@@ -134,6 +136,8 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
 }
 
 .about__certCard {
