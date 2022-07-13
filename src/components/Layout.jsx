@@ -2,8 +2,10 @@ import React, { useRef } from "react";
 import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { NavDropdown, Navbar, Nav } from "react-bootstrap";
-import BlackMage from "./BlackMage";
+
 import { gsap } from "gsap";
+import BlackMage from "./BlackMage";
+import backgroundImg from "../media/backgroundDBZ.png";
 
 import "../styles/App.css";
 
@@ -70,7 +72,9 @@ export default function Layout(props) {
       </header>
 
       <div className="layout__background-sides">
-        <div className="layout__background"></div>
+        <a href={backgroundImg}>
+          <div className="layout__background"></div>{" "}
+        </a>
       </div>
       <div className="layout__background-solid">
         <div className="layout__body">{props.children}</div>
