@@ -25,11 +25,11 @@ const ReactPage = () => {
         </div>
       </QueryClientProvider>
 
-      <Container className="p-5">
-        <Button as={Link} to="/">
-          Home
-        </Button>
-      </Container>
+      <div className="react-page__home-button-container">
+        <Link to="/">
+          <button className="button">Home</button>
+        </Link>
+      </div>
     </div>
   );
 };

@@ -14,11 +14,11 @@ function About() {
 
   return (
     <div>
-      <Container className="">
+      {/* <Container className="">
         <div className="about__container-h1">
           <h1 className="about__container__h1">About</h1>
         </div>
-      </Container>
+      </Container> */}
 
       <Container className="about__accordion-container">
         <div className="about__accordion-about">
@@ -32,13 +32,13 @@ function About() {
                   page connects to a MongoDB using Netlify Serverless Functions.
                   Thanks for visiting and here is a link to the code:
                 </Card.Text>
-                <Button
-                  className="mb-3"
+                <button
+                  className="button"
                   href="https://github.com/Ryankolsen/ryansportkeyv2"
                 >
                   Code
-                </Button>
-                <Card.Text>
+                </button>
+                <Card.Text className="about__card-text-degree">
                   Please see below for my Degrees and Certifications
                 </Card.Text>
               </Card.Body>
@@ -50,7 +50,10 @@ function About() {
             <div>
               <Card.Body className="about__accordion-body">
                 <Card.Text>
-                  After achieving my second Bachelor's degree majoring in
+                  Hi, I'm Ryan and I designed this app. Thanks for checking it
+                  out!
+                  <br />
+                  <br /> After achieving my second Bachelor's degree majoring in
                   Management Information Systems in 2013 I fell in love with
                   software engineering. I started coding with Java SE. Next I
                   expanded my languages to include Python, JavaScript, JSON,
@@ -132,9 +135,11 @@ function About() {
         <Card.Body className="about__cert-body">
           <DisplayList key={"certList"} as="" items={certificates} />
           <div className="centeredButton">
-            <Button variant="primary" className="" href={scCodesMain}>
-              See the SC Codes Teaching Library
-            </Button>
+            <a href={scCodesMain}>
+              <button variant="primary" className="button">
+                See the SC Codes Teaching Library
+              </button>
+            </a>
           </div>
         </Card.Body>
       </Card>
@@ -147,9 +152,9 @@ function About() {
           alignItems: "center",
         }}
       >
-        <Button as={Link} to="/">
-          Home
-        </Button>
+        <Link to="/">
+          <button className="button">Home</button>
+        </Link>
       </div>
     </div>
   );
