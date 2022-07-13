@@ -41,7 +41,9 @@
 .about__accordion-body__container-bottom {
   margin-bottom: 20px;
 }
-
+.about__card-text-degree {
+  padding-top: 15px;
+}
 .about__accordion-body {
   max-width: 750px;
   background-color: var(--blue-bg-color);
