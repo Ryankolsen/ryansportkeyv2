@@ -7,6 +7,7 @@ function BlackMage({ title, titleBackground }) {
   const q = gsap.utils.selector(el);
   const tl = useRef();
 
+  //gsap animaiton inside useeffect - https://greensock.com/get-started/
   useEffect(() => {
     tl.current = gsap
       .timeline()
@@ -59,6 +60,7 @@ function BlackMage({ title, titleBackground }) {
       .to(q(".hand-right"), { duration: 0.3, x: 0 });
   }, []);
   return (
+    // hint: body is the classname for everything else all other classnames noted above
     <div ref={el} className="black-mage__container">
       <img className="magic-ball" src={MagicBall} />
       <div>
