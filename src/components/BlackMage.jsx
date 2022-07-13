@@ -10,36 +10,53 @@ function BlackMage({ title, titleBackground }) {
   useEffect(() => {
     tl.current = gsap
       .timeline()
-
+      //Draw Wand
       .to(q(".hand-right"), { delay: 2, y: 8, x: 4 })
       .to(q(".hand-right"), { delay: 1, y: -4, x: -2 })
       .to(q(".wand"), { delay: 0, opacity: 1 })
 
+      //Ready wand
       .to(q(".wand"), { delay: 1, rotate: -10 })
       .to(q(".magic-ball"), { delay: 0, opacity: 1 })
-
       .to(q(".wand"), { x: -2 })
 
+      //Throw Ball
       .add("use-wand")
-      .to(q(".magic-ball"), { delay: 0, x: 350 }, "use-wand")
+      .to(q(".magic-ball"), { delay: 0, x: 350, duration: 1.5 }, "use-wand")
       .to(q(".wand"), { delay: 0, rotate: 10, opacity: 1 }, "use-wand")
-      .to(q(".top-hat"), { y: 2 })
-      .to(q(".magic-ball"), { delay: 0, duration: 1.5, scale: 10, opacity: 0 })
+      .add("duck-and-cover")
+      .to(q(".eyes"), { scale: 0.85 }, "duck-and-cover")
+      .to(q(".top-hat"), { y: 2 }, "duck-and-cover")
 
-      .to(titleBackground.current, {
-        backgroundColor: "#ACC2FC",
-      })
-
+      //Explode
+      .add("explode")
+      .to(
+        q(".magic-ball"),
+        { delay: 0, duration: 1.5, scale: 10, opacity: 0 },
+        "explode"
+      )
+      //Background and Title
+      .to(
+        titleBackground.current,
+        {
+          backgroundColor: "#ACC2FC",
+        },
+        "explode"
+      )
       .to(titleBackground.current, { backgroundColor: "rgb(12, 12, 12)" })
       .to(q(".top-hat"), { y: 0 })
+      .to(q(".eyes"), { scale: 1 })
+
       .to(title.current, { opacity: 1, x: -80 })
+
+      //Return wand and wave
       .to(q(".wand"), { delay: 0, rotate: 0 })
       .to(q(".wand"), { delay: 1, opacity: 0 })
-      .to(q(".hand-right"), { delay: 0, x: -2 })
-      .to(q(".hand-right"), { delay: 0, x: -6 })
-      .to(q(".hand-right"), { delay: 0, x: -2 })
-      .to(q(".hand-right"), { delay: 0, x: -6 })
-      .to(q(".hand-right"), { delay: 0, x: 0 });
+      .to(q(".hand-right"), { duration: 0.3, x: -2 })
+      .to(q(".hand-right"), { duration: 0.3, x: -6 })
+      .to(q(".hand-right"), { duration: 0.3, x: -2 })
+      .to(q(".hand-right"), { duration: 0.3, x: -6 })
+      .to(q(".hand-right"), { duration: 0.3, x: 0 });
   }, []);
   return (
     <div ref={el} className="black-mage__container">
@@ -3735,6 +3752,7 @@ function BlackMage({ title, titleBackground }) {
             height="2.0202"
             fill="#1F1903"
           />
+          <rect x="17" y="6" width="11" height="6" fill="black" />
         </svg>
 
         <svg
@@ -6100,20 +6118,6 @@ function BlackMage({ title, titleBackground }) {
             fill="#F2E200"
           />
           <rect
-            x="9.7981"
-            y="5.29297"
-            width="0.50505"
-            height="0.50505"
-            fill="#F2E200"
-          />
-          <rect
-            x="9.7981"
-            y="5.29297"
-            width="0.50505"
-            height="0.50505"
-            fill="#595300"
-          />
-          <rect
             x="1.21216"
             y="3.27271"
             width="2.0202"
@@ -6155,6 +6159,10 @@ function BlackMage({ title, titleBackground }) {
             height="0.50505"
             fill="#B1A500"
           />
+          <rect x="8" y="5" width="2" height="0.5" fill="#B1A500" />
+          <rect x="8" y="5" width="2" height="0.5" fill="#B1A500" />
+          <rect x="8" y="5" width="2" height="0.5" fill="#B1A500" />
+          <rect x="8" y="5" width="2" height="0.5" fill="#B1A500" />
           <rect
             x="0.707031"
             y="3.27271"
@@ -6218,20 +6226,11 @@ function BlackMage({ title, titleBackground }) {
             height="2.0202"
             fill="#DAD100"
           />
-          <rect
-            x="9.7981"
-            y="5.29297"
-            width="0.50505"
-            height="0.50505"
-            fill="#595300"
-          />
-          <rect
-            x="9.7981"
-            y="5.29297"
-            width="0.50505"
-            height="0.50505"
-            fill="#595300"
-          />
+          <rect x="9" y="3" width="1.3" height="2" fill="#B1A500" />
+          <rect x="9" y="3" width="1.3" height="2" fill="#B1A500" />
+          <rect x="9" y="3" width="1.3" height="2" fill="#B1A500" />
+          <rect x="9" y="3" width="1.3" height="2" fill="#DAD100" />
+          <rect x="9" y="3" width="1.3" height="2" fill="#DAD100" />
           <rect
             x="2.72729"
             y="1.25256"
@@ -6429,6 +6428,7 @@ function BlackMage({ title, titleBackground }) {
             fill="#F2F2D8"
           />
         </svg>
+
         <svg
           className="wand"
           width="4"
