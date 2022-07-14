@@ -10,17 +10,17 @@ export default function DisplayList({ items }) {
           className="__about-cert-body list-group-item d-flex justify-content-between align-items-center"
           key={item.id.toString()}
         >
-          <Row>
-            <Col>
+          <div className="__about-cert__container">
+            <div>
               <h5 className="__about-cert-name">{item.name}</h5>
-            </Col>
-            <Col>
-              <Row className="__about-cert-text  ">
-                Certificate Achieved From {item.from}{" "}
-                <div className="__about-cert-text">
-                  {" "}
-                  Complete on {item.date}
-                </div>
+            </div>
+
+            <div>
+              <div className="about-cert-text-container">
+                <h5 className="about-cert-text__h5">
+                  Certificate Achieved From {item.from}
+                </h5>
+                <div className="__about-cert-text">Complete on {item.date}</div>
                 <Link
                   className="__about-cert-text"
                   to={item.source}
@@ -28,14 +28,15 @@ export default function DisplayList({ items }) {
                 >
                   Download
                 </Link>
-              </Row>
-            </Col>
-            <Col className="">
-              <iframe title="MyFrame" src={item.source}>
+              </div>
+            </div>
+
+            <div className="">
+              <iframe title="myTitle" src={item.source}>
                 <a href={item.source}>Certificate .pdf</a>
               </iframe>
-            </Col>
-          </Row>
+            </div>
+          </div>
         </li>
       </ul>
     );

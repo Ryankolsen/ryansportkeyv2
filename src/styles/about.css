@@ -119,17 +119,37 @@
   font-family: "PT Sans", sans-serif;
 }
 
+.__about-cert__container {
+  display: grid;
+  grid-template-columns: repeat(3, 350px);
+  text-align: center;
+  margin-top: 50px;
+  border-radius: 15px;
+}
+
 .certList {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+}
+.__about-cert-name {
+  margin-top: 25px;
   font-family: "Cinzel Decorative", cursive;
   font-family: "Miss Fajardose", cursive;
   font-family: "Rye", cursive;
-}
-.__about-cert-name {
-  /* max-width: 350px; */
   min-width: 250px;
   text-align: center;
 }
 
+.__about-cert-text-container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+}
+
+.about-cert-text__h5 {
+  margin: 15px 0 5px 0;
+}
 .__about-cert-text {
   max-width: 350px;
   display: flex;
@@ -138,6 +158,7 @@
   text-align: center;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
+  padding-bottom: 30px;
 }
 
 .about__certCard {
@@ -149,5 +170,14 @@
 .about__cert-body {
   background-color: var(--light-blue-bg-color);
   margin: 25px auto 25px auto;
-  padding: 25px 0 25px 0;
+  padding: 0 0 25px 0;
+  border-radius: 15px;
+}
+
+@media screen and (max-width: 1150px) {
+  .__about-cert__container {
+    display: block;
+    width: 95%;
+    margin: auto;
+  }
 }
