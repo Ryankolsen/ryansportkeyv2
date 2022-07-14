@@ -45,10 +45,11 @@ function BlackMage({ title, titleBackground }) {
         "explode"
       )
       .to(titleBackground.current, { backgroundColor: "rgb(12, 12, 12)" })
-      .to(q(".top-hat"), { y: 0 })
-      .to(q(".eyes"), { scale: 1 })
+      .add("recover-and-text")
+      .to(q(".top-hat"), { y: 0 }, "recover-and-text")
+      .to(q(".eyes"), { scale: 1 }, "recover-and-text")
 
-      .to(title.current, { opacity: 1, x: -80 })
+      .to(title.current, { opacity: 1, x: -80 }, "recover-and-text")
 
       //Return wand and wave
       .to(q(".wand"), { delay: 0, rotate: 0 })
