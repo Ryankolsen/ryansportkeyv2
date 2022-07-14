@@ -116,7 +116,7 @@
   float: right;
 }
 .about__card-text {
-  font-family: cursive, cursive;
+  font-family: "PT Sans", sans-serif;
 }
 
 .certList {
@@ -145,11 +145,6 @@
   background-color: rgb(195, 231, 250);
   margin: 25px 0 25px 0;
 }
-
-/* .MyFrame {
-  max-width: 600;
-  max-height: 500;
-} */
 
 .about__cert-body {
   background-color: var(--light-blue-bg-color);
