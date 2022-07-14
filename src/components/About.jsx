@@ -32,12 +32,9 @@ function About() {
                   page connects to a MongoDB using Netlify Serverless Functions.
                   Thanks for visiting and here is a link to the code:
                 </Card.Text>
-                <button
-                  className="button"
-                  href="https://github.com/Ryankolsen/ryansportkeyv2"
-                >
-                  Code
-                </button>
+                <a href="https://github.com/Ryankolsen/ryansportkeyv2">
+                  <button className="button">Code</button>
+                </a>
                 <Card.Text className="about__card-text-degree">
                   Please see below for my Degrees and Certifications
                 </Card.Text>
