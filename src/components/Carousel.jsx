@@ -98,25 +98,30 @@ function Carousel({ projectCarouselObjects, numberSlides }) {
 
         <div className="carousel__carousel-links">
           <div className="carousel__carousel-links-buttons ">
-            <button
-              className="button carousel__carousel-links-buttons-button"
+            <a
               href={projectCarouselObjects[
                 currImg - 1
               ].links.firstLink.toString()}
             >
-              {projectCarouselObjects[currImg - 1].links.firstLinkButtonText}
-            </button>
+              <button className="button carousel__carousel-links-buttons-button">
+                {projectCarouselObjects[currImg - 1].links.firstLinkButtonText}
+              </button>
+            </a>
           </div>
           {projectCarouselObjects[currImg - 1].links.secondLink ? (
             <div className="carousel__carousel-links-buttons ">
-              <button
-                className="button carousel__carousel-links-buttons-button"
+              <a
                 href={projectCarouselObjects[
                   currImg - 1
                 ].links.secondLink.toString()}
               >
-                {projectCarouselObjects[currImg - 1].links.secondLinkButtonText}
-              </button>
+                <button className="button carousel__carousel-links-buttons-button">
+                  {
+                    projectCarouselObjects[currImg - 1].links
+                      .secondLinkButtonText
+                  }
+                </button>
+              </a>
             </div>
           ) : null}
         </div>
