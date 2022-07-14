@@ -68,4 +68,8 @@
   .heroes-display__container {
     display: block;
   }
+  .heroes-display__container {
+    margin: auto;
+    width: 450px;
+  }
 }
