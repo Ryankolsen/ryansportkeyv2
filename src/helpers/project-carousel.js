@@ -1,4 +1,5 @@
 import googleApiImage from "../media/googleApiImage2.jpg";
+import reactImg from "../media/ReactPage.png";
 import flaskBlogImg from "../media/proj1-flaskblog.jpg";
 import sqldbvs from "../media/proj2-SQL-DB-VS.jpg";
 import data from "../media/proj3-image.png";
@@ -7,16 +8,14 @@ import unity from "../media/proj4-unity.png";
 export const projectCarouselObjects = [
   {
     key: 1,
-    image: googleApiImage,
-    projectTitle: "React Google Book API",
-    projectDescriptions: `This App uses React Redux Toolkit, 
-    Typescript, and RTK Query to access the Google Books API, allows a user to search for books by any author, 
-    and has the option to add books to a favorite list that can be viewed. Please note this is a work in progress.`,
+    image: reactImg,
+    projectTitle: "React Projects",
+    projectDescriptions: `I love front end development and I love React. Here are a few of my projects made with React.`,
     links: {
-      firstLink: "https://main--astonishing-rolypoly-ad8c2b.netlify.app/",
-      firstLinkButtonText: "Website",
-      secondLink: "https://github.com/Ryankolsen/googleBookApi",
-      secondLinkButtonText: "Code on GitHub",
+      firstLink: "/ReactPage",
+      firstLinkButtonText: "Apps",
+      secondLink: "https://main--astonishing-rolypoly-ad8c2b.netlify.app/",
+      secondLinkButtonText: "React Google Api",
     },
   },
   {
