@@ -7,7 +7,7 @@ function BlackMage({ title, titleBackground }) {
   const q = gsap.utils.selector(el);
   const tl = useRef();
 
-  //gsap animaiton inside useeffect - https://greensock.com/get-started/
+  //gsap animation inside useEffect - https://greensock.com/get-started/
   useEffect(() => {
     tl.current = gsap
       .timeline()
@@ -48,7 +48,6 @@ function BlackMage({ title, titleBackground }) {
       .add("recover-and-text")
       .to(q(".top-hat"), { y: 0 }, "recover-and-text")
       .to(q(".eyes"), { scale: 1 }, "recover-and-text")
-
       .to(title.current, { opacity: 1, x: -80 }, "recover-and-text")
 
       //Return wand and wave

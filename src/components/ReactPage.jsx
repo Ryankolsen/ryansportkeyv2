@@ -15,7 +15,7 @@ const ReactPage = () => {
     <div>
       <Carousel
         projectCarouselObjects={projectCarouselObjects}
-        numberSlides={5}
+        numberSlides={4}
       />
       <div className="react_page__header-overline"></div>
       <QueryClientProvider client={queryClient}>
