@@ -1,7 +1,7 @@
 import googleApiImage from "../media/googleApiImage2.jpg";
 import connMod from "../media/ConnModCodeImgBoth.png";
+import scpTransit from "../media/TransitAppImg.png";
 import pokemonImg from "../media/pokemon.jpg";
-import reduxToolkitImg from "../media/reduxToolkitImg.png";
 import reactImg from "../media/reactImg.jpg";
 
 export const projectCarouselObjects = [
@@ -22,6 +22,21 @@ export const projectCarouselObjects = [
   },
   {
     key: 2,
+    image: scpTransit,
+    projectTitle: "Spacecraft Transit Division App",
+    projectDescriptions:
+      "React app built with Redux Toolkit, Vite, Typescript, MobgoDB, Firebase, and Netlify Serverless Functions",
+
+    links: {
+      firstLink: "https://spacecraft-transit-division-app.netlify.app/",
+      firstLinkButtonText: "Application",
+      secondLink:
+        "https://spacecraft-transit-division-app.netlify.app/mod-codes",
+      secondLinkButtonText: "MongoDb Section",
+    },
+  },
+  {
+    key: 3,
     image: connMod,
     projectTitle: "React Native Application",
     projectDescriptions:
@@ -37,7 +52,7 @@ export const projectCarouselObjects = [
   },
 
   {
-    key: 3,
+    key: 4,
     image: googleApiImage,
     projectTitle: "React Google Book API",
     projectDescriptions: `This App uses React Redux Toolkit, 
@@ -48,20 +63,6 @@ export const projectCarouselObjects = [
       firstLinkButtonText: "Website",
       secondLink: "https://github.com/Ryankolsen/googleBookApi",
       secondLinkButtonText: "Code on GitHub",
-    },
-  },
-  {
-    key: 4,
-    image: pokemonImg,
-    projectTitle: "React Pokemon API",
-    projectDescriptions:
-      "This application was built with React, Typescript, React Redux and React Router to connect to a Pokemon API, access, mutate, and display information to a user.",
-
-    links: {
-      firstLink: "https://github.com/Ryankolsen/PokemonAPI",
-      firstLinkButtonText: "Code on GitHub",
-      secondLink: "",
-      secondLinkButtonText: "",
     },
   },
 ];
