@@ -11,7 +11,7 @@ export const projectCarouselObjects = [
     image: reactImg,
     projectTitle: "React Projects",
     projectDescriptions: `I absolutely love front end development and I love React. 
-    I can create anything with a <div> and a little css and some Javascript. Here are a few of my projects made with React.`,
+    I can create anything with a <div>, a little css, and some Javascript. Here are a few of my projects made with React.`,
     links: {
       firstLink: "/ReactPage",
       firstLinkButtonText: "Apps",
