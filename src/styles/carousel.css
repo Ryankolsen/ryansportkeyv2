@@ -53,6 +53,9 @@
   margin: 0;
   padding: 0;
 }
+.carousel__carousel-inner-container {
+  display: flex;
+}
 
 .carousel__carousel-inner-left {
   float: left;
@@ -75,6 +78,13 @@
   align-items: center;
   font-size: 25px;
   margin: auto;
+}
+
+.carousel__carousel-inner-center {
+  width: 80%;
+  height: 300px;
+  margin: auto;
+  /* background-color: red; */
 }
 
 .carousel__carousel-inner-right {
