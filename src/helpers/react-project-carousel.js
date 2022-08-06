@@ -6,21 +6,6 @@ import reactImg from "../media/reactImg.jpg";
 
 export const projectCarouselObjects = [
   {
-    key: 2,
-    image: connMod,
-    projectTitle: "React Native Application",
-    projectDescriptions:
-      "This React Native application is up on Google Play for Android. It is industry specific, I made it for my current job/role, and allows a user to search an extensive modification code list by a couple of different metrics.",
-
-    links: {
-      firstLink: "https://github.com/Ryankolsen/ConnectorModCodes",
-      firstLinkButtonText: "Code on GitHub",
-      secondLink:
-        "https://play.google.com/store/apps/details?id=com.ryankolsen.ConnectorModCodes",
-      secondLinkButtonText: "Play Store Link",
-    },
-  },
-  {
     key: 1,
     image: reactImg,
     projectTitle: "This Website",
@@ -35,6 +20,22 @@ export const projectCarouselObjects = [
       secondLinkButtonText: "",
     },
   },
+  {
+    key: 2,
+    image: connMod,
+    projectTitle: "React Native Application",
+    projectDescriptions:
+      "This React Native application is up on Google Play for Android. It is industry specific, I made it for my current job/role, and allows a user to search an extensive modification code list by a couple of different metrics.",
+
+    links: {
+      firstLink: "https://github.com/Ryankolsen/ConnectorModCodes",
+      firstLinkButtonText: "Code on GitHub",
+      secondLink:
+        "https://play.google.com/store/apps/details?id=com.ryankolsen.ConnectorModCodes",
+      secondLinkButtonText: "Play Store Link",
+    },
+  },
+
   {
     key: 3,
     image: googleApiImage,
