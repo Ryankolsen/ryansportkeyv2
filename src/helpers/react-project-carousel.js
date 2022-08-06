@@ -25,8 +25,8 @@ export const projectCarouselObjects = [
     image: scpTransit,
     projectTitle: "Spacecraft Transit Division App",
     projectDescriptions:
-      "React app built with Redux Toolkit, Vite, Typescript, MobgoDB, Firebase, and Netlify Serverless Functions",
-
+      "This is a React app built with Redux Toolkit, Vite, Typescript, MobgoDB, Firebase, and Netlify Serverless Functions. " +
+      "The app allows users to search a database of circular connector modification codes by a couple different metrics. Authorized users can perform CRUD operations.",
     links: {
       firstLink: "https://spacecraft-transit-division-app.netlify.app/",
       firstLinkButtonText: "Application",
