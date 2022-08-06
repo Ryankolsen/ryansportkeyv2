@@ -12,98 +12,94 @@ function Carousel({ projectCarouselObjects, numberSlides }) {
       <div className="carousel__carousel-container">
         {projectCarouselObjects.map((carouselObj) => {
           return (
-            <div>
-              <div
-                className={
-                  carouselObj.key === currImg ? "slide active" : "slide"
-                }
-                key={carouselObj.key}
-              >
-                {carouselObj.key === currImg ? (
-                  <>
-                    <div className="carousel__carousel-header">
-                      <h1 className="carousel__carousel-header__h1">
-                        {carouselObj.projectTitle}
-                      </h1>
-                      <p className="carousel__carousel-header__p">
-                        {carouselObj.projectDescriptions}
-                      </p>
-                    </div>
+            <div
+              className={carouselObj.key === currImg ? "slide active" : "slide"}
+              key={carouselObj.key}
+            >
+              {carouselObj.key === currImg ? (
+                <>
+                  <div className="carousel__carousel-header">
+                    <h1 className="carousel__carousel-header__h1">
+                      {carouselObj.projectTitle}
+                    </h1>
+                    <p className="carousel__carousel-header__p">
+                      {carouselObj.projectDescriptions}
+                    </p>
+                  </div>
 
-                    <div
-                      className="carousel__carousel-inner"
-                      style={{
-                        backgroundImage: `url(${carouselObj.image})`,
-                      }}
-                    >
-                      <div className="carousel__carousel-inner-container">
-                        <div
-                          className="carousel__carousel-inner-left"
-                          onClick={() => {
-                            if (currImg === 1) {
-                              setCurrImg(numProjects);
-                            }
-                            if (currImg > 1) {
-                              setCurrImg(currImg - 1);
-                            }
-                          }}
-                        >
-                          <div className="carousel__carousel-inner__h1__div">
-                            <h1
-                              onKeyPress={() => {
-                                if (currImg === numberSlides) {
-                                  setCurrImg(1);
-                                }
-                                if (currImg < numberSlides) {
-                                  setCurrImg(currImg + 1);
-                                }
-                              }}
-                              tabIndex={0}
-                              className="carousel__carousel-inner__h1"
-                            >
-                              &#8656;
-                            </h1>
-                          </div>
+                  <div
+                    className="carousel__carousel-inner"
+                    style={{
+                      backgroundImage: `url(${carouselObj.image})`,
+                    }}
+                  >
+                    <div className="carousel__carousel-inner-container">
+                      <div
+                        className="carousel__carousel-inner-left"
+                        onClick={() => {
+                          if (currImg === 1) {
+                            setCurrImg(numProjects);
+                          }
+                          if (currImg > 1) {
+                            setCurrImg(currImg - 1);
+                          }
+                        }}
+                      >
+                        <div className="carousel__carousel-inner__h1__div">
+                          <h1
+                            onKeyPress={() => {
+                              if (currImg === numberSlides) {
+                                setCurrImg(1);
+                              }
+                              if (currImg < numberSlides) {
+                                setCurrImg(currImg + 1);
+                              }
+                            }}
+                            tabIndex={0}
+                            className="carousel__carousel-inner__h1"
+                          >
+                            &#8656;
+                          </h1>
                         </div>
-                        <a
-                          className="carousel__carousel-inner-center"
-                          href={projectCarouselObjects[
-                            currImg - 1
-                          ].links.firstLink.toString()}
-                        ></a>
-                        <div
-                          className="carousel__carousel-inner-right"
-                          onClick={() => {
-                            if (currImg === numberSlides) {
-                              setCurrImg(1);
-                            }
-                            if (currImg < numberSlides) {
-                              setCurrImg(currImg + 1);
-                            }
-                          }}
-                        >
-                          <div className="carousel__carousel-inner__h1__div">
-                            <h1
-                              onKeyPress={() => {
-                                if (currImg === numberSlides) {
-                                  setCurrImg(1);
-                                }
-                                if (currImg < numberSlides) {
-                                  setCurrImg(currImg + 1);
-                                }
-                              }}
-                              tabIndex={0}
-                              className="carousel__carousel-inner__h1"
-                            >
-                              &#8658;
-                            </h1>
-                          </div>
+                      </div>
+                      <a
+                        className="carousel__carousel-inner-center"
+                        href={projectCarouselObjects[
+                          currImg - 1
+                        ].links.firstLink.toString()}
+                      ></a>
+                      <div
+                        className="carousel__carousel-inner-right"
+                        onClick={() => {
+                          if (currImg === numberSlides) {
+                            setCurrImg(1);
+                          }
+                          if (currImg < numberSlides) {
+                            setCurrImg(currImg + 1);
+                          }
+                        }}
+                      >
+                        <div className="carousel__carousel-inner__h1__div">
+                          <h1
+                            onKeyPress={() => {
+                              if (currImg === numberSlides) {
+                                setCurrImg(1);
+                              }
+                              if (currImg < numberSlides) {
+                                setCurrImg(currImg + 1);
+                              }
+                            }}
+                            tabIndex={0}
+                            className="carousel__carousel-inner__h1"
+                          >
+                            &#8658;
+                          </h1>
                         </div>
                       </div>
                     </div>
-                  </>
-                ) : null}
-              </div>
+                  </div>
+                </>
+              ) : null}
             </div>
           );
         })}
