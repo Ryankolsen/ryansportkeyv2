@@ -49,10 +49,36 @@
   width: 1140px;
   height: 600px;
   background-image: url("../media/backgroundDBZ-sm.png");
+
   background-size: contain;
   background-repeat: no-repeat;
   border-radius: 15px;
+  position: relative;
   /* background-attachment: fixed; */
+}
+
+.layout__background__h2 {
+  text-decoration: none;
+  padding: 20% 0 50px 0;
+  font-family: "Rock Salt", cursive;
+  width: fit-content;
+  margin: auto;
+  color: #edf2ff;
+  font-size: 50px;
+  opacity: 0;
+}
+.layout__background__p {
+  padding-top: 65px;
+  text-decoration: none;
+  font-family: "Rock Salt", cursive;
+  width: fit-content;
+  margin: auto;
+  color: #edf2ff;
+  font-size: 40px;
+}
+.layout__background__a-container {
+  height: 500px;
+  width: 500px;
 }
 .layout__background-solid {
   background-color: #344389;
@@ -75,6 +101,16 @@
   .layout__background {
     height: 300px;
     width: 565px;
+  }
+  .layout__background__p {
+    font-size: 25px;
+    padding: 15px 0 20px 15px;
+    margin: auto;
+  }
+  .layout__background__h2 {
+    font-size: 25px;
+    padding: 85px 0 20px 15px;
+    margin: auto;
   }
 }
 @media screen and (max-width: 800px) {
