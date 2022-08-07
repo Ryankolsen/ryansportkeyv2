@@ -78,7 +78,7 @@
   font-size: 40px;
 }
 .layout__background__a-container {
-  height: 500px;
+  height: 100px;
   width: 500px;
 }
 .layout__background-solid {
@@ -122,6 +122,10 @@
   .layout__title {
     margin-left: 50px;
   }
+  .layout__background__a-container {
+    height: 25px;
+    width: 100px;
+  }
 }
 @media screen and (max-width: 475px) {
   .layout__background {
@@ -131,6 +135,11 @@
   .layout__background-sides {
     background-color: #0e1848;
     padding: 60px 0 20px 0;
+  }
+}
+@media screen and (max-width: 560px) {
+  .layout__main-container {
+    width: auto;
   }
 }
 @media screen and (max-width: 425px) {
