@@ -26,7 +26,6 @@ export default function Layout(props) {
             />
           </div>
           <h2 ref={title} className="layout__title">
-            {" "}
             Ryan's Portfolio
           </h2>
         </div>
@@ -82,7 +81,7 @@ export default function Layout(props) {
           <h2 ref={backgroundH2} className="layout__background__h2">
             Projects
           </h2>
-          <p className="layout__background__p"></p>
+          {/* <p className="layout__background__p"></p> */}
           <a href={backgroundImg} className="layout__background__a">
             <div className="layout__background__a-container"></div>
           </a>
