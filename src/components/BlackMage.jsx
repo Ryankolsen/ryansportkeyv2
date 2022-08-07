@@ -49,14 +49,7 @@ function BlackMage({ title, titleBackground, dbzImg, backgroundH2 }) {
       .to(q(".top-hat"), { y: 0 }, "recover-and-text")
       .to(q(".eyes"), { scale: 1 }, "recover-and-text")
       .to(title.current, { opacity: 1, x: -80 }, "recover-and-text")
-      .to(
-        dbzImg.current,
-        {
-          backgroundImage:
-            "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../src/media/backgroundDBZ-sm.png')",
-        },
-        "recover-and-text"
-      )
+
       .to(backgroundH2.current, { opacity: 1 }, "recover-and-text")
 
       //Return wand and wave
