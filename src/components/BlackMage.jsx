@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import MagicBall from "../media/MagicBall.png";
 import { gsap } from "gsap";
 
-function BlackMage({ title, titleBackground, dbzImg }) {
+function BlackMage({ title, titleBackground, dbzImg, backgroundH2 }) {
   const el = useRef();
   const q = gsap.utils.selector(el);
   const tl = useRef();
@@ -49,7 +49,15 @@ function BlackMage({ title, titleBackground, dbzImg }) {
       .to(q(".top-hat"), { y: 0 }, "recover-and-text")
       .to(q(".eyes"), { scale: 1 }, "recover-and-text")
       .to(title.current, { opacity: 1, x: -80 }, "recover-and-text")
-      .to(dbzImg, { opacity: 0.4 })
+      .to(
+        dbzImg.current,
+        {
+          backgroundImage:
+            "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../src/media/backgroundDBZ-sm.png')",
+        },
+        "recover-and-text"
+      )
+      .to(backgroundH2.current, { opacity: 1 }, "recover-and-text")
 
       //Return wand and wave
       .to(q(".wand"), { delay: 0, rotate: 0 })
