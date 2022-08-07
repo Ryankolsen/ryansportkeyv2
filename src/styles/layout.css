@@ -48,7 +48,8 @@
   margin: auto;
   width: 1140px;
   height: 600px;
-  background-image: url("../media/backgroundDBZ-sm.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../media/backgroundDBZ-sm.png");
 
   background-size: contain;
   background-repeat: no-repeat;
