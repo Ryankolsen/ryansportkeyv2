@@ -131,7 +131,7 @@
 @media screen and (max-width: 560px) {
   .layout__main-container {
     /* min-width: 450px; */
-    width: 500px;
+    width: auto;
   }
   .layout__background__h2 {
     font-size: 25px;
