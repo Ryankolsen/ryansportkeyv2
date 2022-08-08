@@ -14,8 +14,8 @@ export default function Home() {
       />
       <div className="new-home__links">
         <div className="new-home__button">
-          <a href="https://main--astonishing-rolypoly-ad8c2b.netlify.app/">
-            <button className="button">React API</button>
+          <a href="https://spacecraft-transit-division-app.netlify.app/">
+            <button className="button">Transit API</button>
           </a>
         </div>
         <div className="new-home__button">
