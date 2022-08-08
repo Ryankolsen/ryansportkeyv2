@@ -35,3 +35,9 @@
   white-space: nowrap;
   font-family: "Nunito", sans-serif;
 }
+
+@media screen and (max-width: 560px) {
+  .footer {
+    min-height: 15vh;
+  }
+}
