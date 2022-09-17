@@ -41,7 +41,7 @@ export const projectCarouselObjects = [
     projectTitle: "tRPC Application",
     projectDescriptions:
       "This is a guestbook created with the T3 stack: TypeScript NextJs, tRPC, Prisma, PostgreSQL, Railway, Tailwind." +
-      " Users can sign in using Discord, post a new message, and edit existing message",
+      " Users can sign in using Discord or Google, post a new message, and edit existing message",
     links: {
       firstLink: "https://trpc-guestbook.vercel.app/",
       firstLinkButtonText: "Application",
