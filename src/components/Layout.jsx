@@ -61,11 +61,17 @@ export default function Layout(props) {
                 </NavDropdown.Item>
 
                 <NavDropdown.Divider />
+                <NavDropdown.Item href="https://spacecraft-transit-division-app.netlify.app/">
+                  Spacecraft Transit App
+                </NavDropdown.Item>
+                <NavDropdown.Item href="https://trpc-guestbook.vercel.app/">
+                  tRPC APP
+                </NavDropdown.Item>
                 <NavDropdown.Item href="https://main--astonishing-rolypoly-ad8c2b.netlify.app/">
                   Google Book API
                 </NavDropdown.Item>
                 <NavDropdown.Item href="https://www.ryanswebsite0909.com/">
-                  Blog Website Example
+                  Django Website Example
                 </NavDropdown.Item>
               </NavDropdown>
               <Nav.Link as={Link} to="/About" className="mr-4">
