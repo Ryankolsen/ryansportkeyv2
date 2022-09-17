@@ -1,7 +1,7 @@
 import googleApiImage from "../media/googleApiImage2.jpg";
 import connMod from "../media/ConnModCodeImgBoth.png";
 import scpTransit from "../media/TransitAppImg.png";
-import pokemonImg from "../media/pokemon.jpg";
+import trpcImg from "../media/Anything-Blog.png";
 import reactImg from "../media/reactImg.jpg";
 
 export const projectCarouselObjects = [
@@ -37,6 +37,20 @@ export const projectCarouselObjects = [
   },
   {
     key: 3,
+    image: trpcImg,
+    projectTitle: "tRPC Application",
+    projectDescriptions:
+      "This is a guestbook created with the T3 stack: TypeScript NextJs, tRPC, Prisma, PostgreSQL, Railway, Tailwind." +
+      " Users can sign in using Discord, post a new message, and edit existing message",
+    links: {
+      firstLink: "https://trpc-guestbook.vercel.app/",
+      firstLinkButtonText: "Application",
+      secondLink: "https://github.com/Ryankolsen/trpc-Guestbook",
+      secondLinkButtonText: "Code on GitHub",
+    },
+  },
+  {
+    key: 4,
     image: connMod,
     projectTitle: "React Native Application",
     projectDescriptions:
@@ -52,7 +66,7 @@ export const projectCarouselObjects = [
   },
 
   {
-    key: 4,
+    key: 5,
     image: googleApiImage,
     projectTitle: "React Google Book API",
     projectDescriptions: `This App uses React Redux Toolkit, 
